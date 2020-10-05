@@ -1,0 +1,516 @@
+/* ALL */
+            @font-face {
+                font-family: 'Merriweather';
+                src: url('/merriweather-bold-webfont.woff2') format('woff2'),
+                     url('/merriweather-bold-webfont.woff') format('woff');
+                font-weight: 700;
+                font-display: block;
+            }
+    
+            @font-face {
+                font-family: 'Merriweather';
+                src: url('/merriweather-regular-webfont.woff2') format('woff2'),
+                     url('/merriweather-regular-webfont.woff') format('woff');
+                font-weight: 400;
+                font-display: block;
+            }
+    
+            html {
+                font-size: 16px;
+                overflow-y: scroll;
+                }
+    
+            body, .footer, .caption-container {
+                background: #101010;
+            }
+    
+            @media all and (max-width: 899px) {
+                html, body {
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%;
+                }
+            }
+            
+            a {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                cursor: pointer;
+                text-decoration: none;
+                -webkit-transition: 500ms linear 0s;
+                -moz-transition: 500ms linear 0s;
+                -o-transition: 500ms linear 0s;
+                transition: 500ms linear 0s;
+                outline: 0 none;
+                color: white;
+                text-shadow: -.0625rem .0625rem .5rem #000DCA, .0625rem -.0625rem .5rem #fff;
+            }
+    
+            img, .frontimage, .front, .links, .center {
+                margin: 0 auto;
+            }
+
+            .titles {
+                margin-top: 16px;
+                margin-bottom: 8px;
+                min-height: 68px; /* to prevent pyramid from jumping */
+            }
+
+        @media all and (max-width: 899px) {
+			.titles {
+                margin-top: 16px;
+                margin-bottom: 8px;
+                min-height: 58px; /* to prevent pyramid from jumping */
+            }    
+        }
+
+            h1, h2, h3, p, a, .col, .center, .front, .footer, .pyramid, .philosophy, .one {
+                text-align: center;
+                font-family: 'Merriweather', 'Georgia', serif;
+            }
+            
+            h1, a, h2 {
+                color: #fff01a;
+            }
+    
+            h2, img {
+                display: inline;
+            }
+    
+            p, div, h3, .center {
+                color: #bababa;
+            }
+    
+            @media all and (min-width: 1401px) {
+                p, div, h3, .center {
+                    color: #cacaca;
+                }
+            }
+
+            @media all and (max-width: 899px) {
+            h1 {
+                font-size: 27px;
+            }
+            }
+    
+            @media (min-width:900px) and (max-width:1400px) {
+            h1 {
+                font-size: 45px;
+            }
+            }
+    
+            @media all and (min-width: 1401px) {
+            h1 {
+                font-size: 50px;
+            }
+            }
+            
+            h1 {
+                margin: 0;
+            }
+    
+            .row > img {
+                vertical-align: middle;
+                width: 60px;
+            }
+            
+            .pyramid {
+                margin-bottom: 26px;
+            }
+
+        @media all and (max-width: 899px) {
+        	.pyramid {
+        		margin-bottom: 16px;
+        	}
+        }
+            
+            @keyframes fadein {
+                0% {opacity:0; }
+                99% { opacity:0;}
+                100% {opacity:1;}
+            }
+            @-moz-keyframes fadein { /* Firefox */
+                0% {opacity:0; }
+                99% { opacity:0;}
+                100% {opacity:1;}
+            }
+            @-webkit-keyframes fadein { /* Safari and Chrome */
+                0% {opacity:0; }
+                99% { opacity:0;}
+                100% {opacity:1;}
+            }
+            @-o-keyframes fadein { /* Opera */
+                0% {opacity:0; }
+                99% { opacity:0;}
+                100% {opacity:1;}
+            }
+            
+            .name:hover {
+                cursor: pointer;
+            }
+    
+            .frontimage {
+               margin-top: 8px;
+               margin-bottom: 10px;
+            }
+    
+            .frontimage {
+                text-align: center;
+                display: block;
+                width: 100px;
+                animation: stretch 2s ease-out infinite alternate;
+                -webkit-animation: stretch 2s ease-out infinite alternate;
+                -moz-animation: stretch 2s ease-out infinite alternate;
+                animation-fill-mode: none;
+                -webkit-animation-fill-mode: none;
+                -moz-animation-fill-mode: none;
+                animation-play-state: running;
+                -webkit-animation-play-state: running;
+                -moz-animation-play-state: running;
+}
+            
+            .frontimage:hover {
+                -moz-filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 2));
+                filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 2));
+                -webkit-filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 2));
+            }
+    
+            @keyframes stretch {
+              0% {
+                -moz-filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 0.4));
+                filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 0.4));
+                -webkit-filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 0.4));
+              }
+              100% {
+                -moz-filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 4));
+                filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 4));
+                -webkit-filter: drop-shadow(0rem 0rem 1.25rem rgba(255, 242, 53, 4));
+              }
+            }
+            
+            .one {
+                display: block;
+                margin-bottom: 8px;
+                min-height: 22px; /* to prevent pyramid from jumping */
+            }
+            
+            .two {
+                padding-right: 80px;
+            }
+
+            .front {
+                margin: 0 auto;
+                max-width: 700px;
+                font-size: 18px;
+                line-height: 1.5;
+                text-align: left;
+            }
+    
+            @media all and (max-width: 899px) {
+            .front { 
+                padding-top: .8rem;
+                padding-bottom: .8rem;
+            }
+            }  
+    
+            @media (min-width:900px) and (max-width:1400px) {
+            .front { 
+                padding-top: .8rem;
+                padding-bottom: .8rem;
+            }
+            }  
+    
+            @media all and (min-width: 1401px) {
+            .front { 
+                padding-bottom: 1rem;
+            }
+            }
+            
+            .footer {
+                display: block;
+                font-size: 18px;
+                width: auto;
+            }
+            
+            @media all and (max-width: 899px) {
+            #___gcse_0 {
+                width: 99%;
+            }
+            }
+            
+            @media (min-width:900px) and (max-width:1400px) {
+            #___gcse_0 {
+                width: 40%;
+            }
+            }
+    
+            @media all and (min-width: 1401px) {
+            #___gcse_0 {
+                width: 30%;
+            }
+            }
+            
+            #___gcse_0 {
+                margin: auto;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .gs-title {
+                text-align: left !important;
+            }
+            
+/* PHILOSOPHY */
+
+            .links {
+                display: flex;
+                flex-wrap: wrap;
+                font-weight: bold;
+                padding-bottom: 3rem;
+                padding-top: 1rem;
+                margin: auto;
+                max-width: 700px;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+    
+            @media all and (max-width: 899px) {
+            .links {
+                letter-spacing: .5px;
+            }
+            }
+    
+            @media (min-width:900px) and (max-width:1400px) {
+            .links {
+                letter-spacing: .75px;
+            }
+            }
+    
+            @media all and (min-width: 1401px) {
+            .links {
+                letter-spacing: 1px;
+            }
+            }
+    
+            .col {
+                flex: 1 1 left;
+                padding: 5px;
+            }
+    
+            h2 {
+                letter-spacing: 1px;
+                vertical-align: middle;
+                margin-right: .5rem;
+                text-align: left;
+                font-size: 25px;
+                display: block;
+            }
+    
+            .philosophy {
+                margin: auto;
+                max-width: 700px;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+    
+            @media all and (max-width: 899px) {
+            .philosophy { 
+                padding-left: .5rem;
+                padding-right: .5rem; 
+            }
+            }
+    
+            @media (min-width:900px) and (max-width:1400px) {
+            .philosophy { 
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            }
+    
+            @media all and (min-width: 1401px) {
+            .philosophy { 
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+            }
+            }
+
+            .backtotop {
+                text-align: right;
+                display: block;
+                font-size: 30px;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+    
+            p {
+                text-align: left;
+                margin-bottom: 1.5rem;
+            }
+            
+/* JOURNAL */
+            .searchbox {
+                display: block;
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                clear: both;
+            }
+
+            .arrowleft {
+                display: inline-block;
+                float: left;
+              width:33.33%;
+              text-align:left;
+                color: yellow;
+                height: 24px;
+            }
+            .arrownav {
+                display: block;
+                margin: auto;
+                font-size: 16px;
+                font-weight: bold;
+                max-width: 555px;
+            }
+
+            .arrowright {
+                display: inline-block;
+                float: left;
+             width:33.33%;;
+             text-align:right;
+                color: yellow;
+                height: 24px;
+            }
+
+            .home {
+                display: block;
+                 float: left;
+              width:33.33%;;
+              text-align:center;
+                color: yellow;
+                font-size: 24px;
+            }
+            
+            .journal {
+                margin: 0 auto;
+                margin-bottom: 26px;
+                max-width: 700px;
+                font-size: 18px;
+            }
+            
+            .s {
+                color: #ccc01a;
+            }
+
+            .j, .r {
+                text-align: left;
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                color: #ded113;
+            }
+    
+            .e, .d {
+                text-align: left;
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+                padding-left: 2rem;
+            }
+/* ART */
+            .art {
+                padding-bottom: 26px;
+            }
+
+            /* Position the image container (needed to position the left and right arrows) */
+            .container {
+                position: relative;
+                text-align: left;
+                font-size: 18px;
+                display: block;
+                margin: auto;
+            }
+
+            .gallery {
+                position: relative;
+                max-width: 90vw;
+                margin: auto;
+            }
+
+            .row {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                margin: auto;
+                max-width: 700px;
+            }
+    
+            .mySlides {
+                display: none;
+                text-align: center;
+            }
+        
+            .mySlides > a > img {
+                max-height: 90vh;
+                max-width: 90vw;
+            }
+    
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            .prev {
+                left: -3vw;
+            }
+    
+            /* Position the "next button" to the right */
+            .next {
+                right: -3vw;
+                border-radius: 3px 0 0 3px;
+            }
+    
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+    
+            #caption {
+                text-align: center;
+                color: white;
+            }
+
+            /* Add a pointer when hovering over the thumbnail images */
+            .cursor {
+                cursor: pointer;
+            }
+    
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+    
+            /* Six columns side by side */
+            .column {
+                float: left;
+                width: 50px;
+            }
+    
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+                opacity: 0.6;
+                width: 50px;
+            }
+    
+            .active, .demo:hover {
+                opacity: 1;
+            }
