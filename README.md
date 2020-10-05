@@ -1,1 +1,0 @@
-# davidkuyk.github.io
