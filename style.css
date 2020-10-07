@@ -1,27 +1,11 @@
 /* ALL */
-            @font-face {
-                font-family: 'Merriweather';
-                src: url('/merriweather-bold-webfont.woff2') format('woff2'),
-                     url('/merriweather-bold-webfont.woff') format('woff');
-                font-weight: 700;
-                font-display: block;
-            }
-    
-            @font-face {
-                font-family: 'Merriweather';
-                src: url('/merriweather-regular-webfont.woff2') format('woff2'),
-                     url('/merriweather-regular-webfont.woff') format('woff');
-                font-weight: 400;
-                font-display: block;
-            }
-    
             html {
                 font-size: 16px;
                 overflow-y: scroll;
                 }
     
             body, .footer, .caption-container {
-                background: #101010;
+                background: white;
             }
     
             @media all and (max-width: 899px) {
@@ -43,7 +27,7 @@
                 -o-transition: 500ms linear 0s;
                 transition: 500ms linear 0s;
                 outline: 0 none;
-                color: white;
+                color: blue;
                 text-shadow: -.0625rem .0625rem .5rem #000DCA, .0625rem -.0625rem .5rem #fff;
             }
     
@@ -67,11 +51,11 @@
 
             h1, h2, h3, p, a, .col, .center, .front, .footer, .pyramid, .philosophy, .one {
                 text-align: center;
-                font-family: 'Merriweather', 'Georgia', serif;
+                font-family: 'Lato', 'Arial', serif;
             }
             
             h1, a, h2 {
-                color: #fff01a;
+                color: black;
             }
     
             h2, img {
@@ -79,12 +63,12 @@
             }
     
             p, div, h3, .center {
-                color: #bababa;
+                color: black;
             }
     
             @media all and (min-width: 1401px) {
                 p, div, h3, .center {
-                    color: #cacaca;
+                    color: black;
                 }
             }
 
