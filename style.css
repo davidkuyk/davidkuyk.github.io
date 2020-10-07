@@ -71,16 +71,6 @@ img {
     border-radius: 2rem;
 }
 
-p, div, h3, .center {
-    color: black;
-}
-
-@media all and (min-width: 1401px) {
-    p, div, h3, .center {
-        color: black;
-    }
-}
-
 @media all and (max-width: 899px) {
 h1 {
     font-size: 27px;
@@ -165,8 +155,8 @@ h1 {
 h2 {
     letter-spacing: 1px;
     vertical-align: middle;
-    margin-right: .5rem;
-    text-align: left;
+    text-align: center;
+    margin: auto;
     font-size: 25px;
     display: block;
 }
