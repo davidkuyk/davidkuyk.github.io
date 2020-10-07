@@ -68,6 +68,11 @@ h2, img {
     display: inline;
 }
 
+img {
+    width: 100px;
+    margin: auto;
+}
+
 p, div, h3, .center {
     color: black;
 }
