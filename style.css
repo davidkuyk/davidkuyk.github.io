@@ -4,7 +4,7 @@
                 overflow-y: scroll;
                 }
     
-            body, .footer, .caption-container {
+            body, .footer {
                 background: white;
             }
     
@@ -31,25 +31,25 @@
                 text-shadow: -.0625rem .0625rem .5rem #000DCA, .0625rem -.0625rem .5rem #fff;
             }
     
-            img, .frontimage, .front, .links, .center {
+            img, .center {
                 margin: 0 auto;
             }
 
-            .titles {
+            h1 {
                 margin-top: 16px;
                 margin-bottom: 8px;
                 min-height: 68px; /* to prevent pyramid from jumping */
             }
 
         @media all and (max-width: 899px) {
-			.titles {
+			h1 {
                 margin-top: 16px;
                 margin-bottom: 8px;
                 min-height: 58px; /* to prevent pyramid from jumping */
             }    
         }
 
-            h1, h2, h3, p, a, .col, .center, .front, .footer, .pyramid, .philosophy, .one {
+            h1, h2, h3, p, a, .col, .center, .front, .footer {
                 text-align: center;
                 font-family: 'Lato', 'Arial', serif;
             }
@@ -99,37 +99,6 @@
                 width: 60px;
             }
             
-            .pyramid {
-                margin-bottom: 26px;
-            }
-
-        @media all and (max-width: 899px) {
-        	.pyramid {
-        		margin-bottom: 16px;
-        	}
-        }
-            
-            @keyframes fadein {
-                0% {opacity:0; }
-                99% { opacity:0;}
-                100% {opacity:1;}
-            }
-            @-moz-keyframes fadein { /* Firefox */
-                0% {opacity:0; }
-                99% { opacity:0;}
-                100% {opacity:1;}
-            }
-            @-webkit-keyframes fadein { /* Safari and Chrome */
-                0% {opacity:0; }
-                99% { opacity:0;}
-                100% {opacity:1;}
-            }
-            @-o-keyframes fadein { /* Opera */
-                0% {opacity:0; }
-                99% { opacity:0;}
-                100% {opacity:1;}
-            }
-            
             .name:hover {
                 cursor: pointer;
             }
@@ -173,108 +142,10 @@
               }
             }
             
-            .one {
-                display: block;
-                margin-bottom: 8px;
-                min-height: 22px; /* to prevent pyramid from jumping */
-            }
-            
-            .two {
-                padding-right: 80px;
-            }
-
-            .front {
-                margin: 0 auto;
-                max-width: 700px;
-                font-size: 18px;
-                line-height: 1.5;
-                text-align: left;
-            }
-    
-            @media all and (max-width: 899px) {
-            .front { 
-                padding-top: .8rem;
-                padding-bottom: .8rem;
-            }
-            }  
-    
-            @media (min-width:900px) and (max-width:1400px) {
-            .front { 
-                padding-top: .8rem;
-                padding-bottom: .8rem;
-            }
-            }  
-    
-            @media all and (min-width: 1401px) {
-            .front { 
-                padding-bottom: 1rem;
-            }
-            }
-            
             .footer {
                 display: block;
                 font-size: 18px;
                 width: auto;
-            }
-            
-            @media all and (max-width: 899px) {
-            #___gcse_0 {
-                width: 99%;
-            }
-            }
-            
-            @media (min-width:900px) and (max-width:1400px) {
-            #___gcse_0 {
-                width: 40%;
-            }
-            }
-    
-            @media all and (min-width: 1401px) {
-            #___gcse_0 {
-                width: 30%;
-            }
-            }
-            
-            #___gcse_0 {
-                margin: auto;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
-            
-            .gs-title {
-                text-align: left !important;
-            }
-            
-/* PHILOSOPHY */
-
-            .links {
-                display: flex;
-                flex-wrap: wrap;
-                font-weight: bold;
-                padding-bottom: 3rem;
-                padding-top: 1rem;
-                margin: auto;
-                max-width: 700px;
-                font-size: 18px;
-                line-height: 1.5;
-            }
-    
-            @media all and (max-width: 899px) {
-            .links {
-                letter-spacing: .5px;
-            }
-            }
-    
-            @media (min-width:900px) and (max-width:1400px) {
-            .links {
-                letter-spacing: .75px;
-            }
-            }
-    
-            @media all and (min-width: 1401px) {
-            .links {
-                letter-spacing: 1px;
-            }
             }
     
             .col {
@@ -291,54 +162,10 @@
                 display: block;
             }
     
-            .philosophy {
-                margin: auto;
-                max-width: 700px;
-                font-size: 18px;
-                line-height: 1.5;
-            }
-    
-            @media all and (max-width: 899px) {
-            .philosophy { 
-                padding-left: .5rem;
-                padding-right: .5rem; 
-            }
-            }
-    
-            @media (min-width:900px) and (max-width:1400px) {
-            .philosophy { 
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-            }
-    
-            @media all and (min-width: 1401px) {
-            .philosophy { 
-                padding-left: 2.5rem;
-                padding-right: 2.5rem;
-            }
-            }
-
-            .backtotop {
-                text-align: right;
-                display: block;
-                font-size: 30px;
-                margin-bottom: 0;
-                margin-top: 0;
-            }
     
             p {
                 text-align: left;
                 margin-bottom: 1.5rem;
-            }
-            
-/* JOURNAL */
-            .searchbox {
-                display: block;
-                width: 100%;
-                margin: auto;
-                text-align: center;
-                clear: both;
             }
 
             .arrowleft {
@@ -366,47 +193,7 @@
                 height: 24px;
             }
 
-            .home {
-                display: block;
-                 float: left;
-              width:33.33%;;
-              text-align:center;
-                color: yellow;
-                font-size: 24px;
-            }
-            
-            .journal {
-                margin: 0 auto;
-                margin-bottom: 26px;
-                max-width: 700px;
-                font-size: 18px;
-            }
-            
-            .s {
-                color: #ccc01a;
-            }
-
-            .j, .r {
-                text-align: left;
-                margin-top: .5rem;
-                margin-bottom: .5rem;
-                padding-left: 1rem;
-                padding-right: 1rem;
-                color: #ded113;
-            }
-    
-            .e, .d {
-                text-align: left;
-                margin-top: .5rem;
-                margin-bottom: 1rem;
-                padding-left: 2rem;
-            }
-/* ART */
-            .art {
-                padding-bottom: 26px;
-            }
-
-            /* Position the image container (needed to position the left and right arrows) */
+        /* Position the image container (needed to position the left and right arrows) */
             .container {
                 position: relative;
                 text-align: left;
