@@ -94,6 +94,12 @@ h1 {
     margin: 0;
 }
 
+.projectGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .row > img {
     vertical-align: middle;
     width: 60px;
@@ -155,7 +161,6 @@ h1 {
 
 h2 {
     letter-spacing: 1px;
-    vertical-align: middle;
     text-align: center;
     margin: auto;
     font-size: 25px;
@@ -170,10 +175,9 @@ p {
 }
 
 .arrowleft {
-    display: inline-block;
     float: left;
-  width:33.33%;
-  text-align:left;
+    width:33.33%;
+    text-align:left;
     color: yellow;
     height: 24px;
 }
@@ -186,10 +190,9 @@ p {
 }
 
 .arrowright {
-    display: inline-block;
     float: left;
- width:33.33%;;
- text-align:right;
+    width:33.33%;;
+    text-align:right;
     color: yellow;
     height: 24px;
 }
