@@ -98,6 +98,22 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+}
+
+.projectGroup {
+    font-size: 30px;
+    font-style: bold;
+    padding: 20px;
+    border: solid black;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.projectGroup:hover {
+    background-color: white;
+    cursor: pointer;
 }
 
 .row > img {
