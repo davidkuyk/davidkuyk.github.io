@@ -103,6 +103,7 @@ h1 {
     justify-content: center;
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 @media all and (max-width: 899px) {
