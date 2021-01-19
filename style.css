@@ -4,13 +4,13 @@ html {
     }
 
 body, .footer {
-    background: white;
+    background: rgb(238, 238, 238);
     margin: auto;
 }
 
 @media all and (min-width: 1401px) {
     body {
-        width: 50%;
+        width: 40%;
     }
 }
 
@@ -32,9 +32,7 @@ a:hover {
     -moz-transition: 500ms linear 0s;
     -o-transition: 500ms linear 0s;
     transition: 500ms linear 0s;
-    outline: 0 none;
-    color: blue;
-    text-shadow: -.0625rem .0625rem .5rem #000DCA, .0625rem -.0625rem .5rem #fff;
+    text-shadow: -.0625rem .0625rem .5rem #cecece, .0625rem -.0625rem .5rem #fff;
 }
 
 img, .center {
@@ -96,6 +94,7 @@ h1 {
 
 .projectGrid {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -106,14 +105,16 @@ h1 {
     font-style: bold;
     padding: 20px;
     border: solid black;
-    width: 200px;
+    width: 700px;
     text-align: center;
     margin: auto;
 }
 
 .projectGroup:hover {
-    background-color: white;
+    background-color: rgb(140, 140, 140);
     cursor: pointer;
+    border-color:rgb(140, 140, 140);
+    outline: 0 none;
 }
 
 .row > img {
