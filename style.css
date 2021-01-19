@@ -1,6 +1,7 @@
 html {
     font-size: 16px;
     overflow-y: scroll;
+    width: 100%
     }
 
 body, .footer {
@@ -18,6 +19,9 @@ body, .footer {
     html, body {
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
+    }
+    body {
+        width: 95%
     }
 }
 
@@ -97,7 +101,14 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 899px) {
+    .projectGrid {
+        width: 80%;
+    }
 }
 
 .projectGroup {
@@ -105,9 +116,9 @@ h1 {
     font-style: bold;
     padding: 20px;
     border: solid black;
-    width: 700px;
+    width: 500px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .projectGroup:hover {
@@ -171,11 +182,6 @@ h1 {
     width: auto;
 }
 
-.col {
-    flex: 1 1 left;
-    padding: 5px;
-}
-
 h2 {
     letter-spacing: 1px;
     text-align: center;
@@ -189,29 +195,6 @@ p {
     text-align: left;
     margin-bottom: 1.5rem;
     font-size: 20px;
-}
-
-.arrowleft {
-    float: left;
-    width:33.33%;
-    text-align:left;
-    color: yellow;
-    height: 24px;
-}
-.arrownav {
-    display: block;
-    margin: auto;
-    font-size: 16px;
-    font-weight: bold;
-    max-width: 555px;
-}
-
-.arrowright {
-    float: left;
-    width:33.33%;;
-    text-align:right;
-    color: yellow;
-    height: 24px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -289,12 +272,6 @@ p {
     content: "";
     display: table;
     clear: both;
-}
-
-/* Six columns side by side */
-.column {
-    float: left;
-    width: 50px;
 }
 
 /* Add a transparency effect for thumnbail images */
