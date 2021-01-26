@@ -112,7 +112,7 @@ h1 {
     }
 }
 
-.projectGroup {
+.accordion {
     font-size: 30px;
     font-style: bold;
     padding: 20px;
@@ -120,13 +120,27 @@ h1 {
     width: 500px;
     text-align: center;
     margin: 0 auto;
+    transition: 0.4s;
 }
 
-.projectGroup:hover {
+.active, .accordion:hover {
+    display: block;
     background-color: rgb(140, 140, 140);
     cursor: pointer;
     border-color:rgb(140, 140, 140);
     outline: 0 none;
+}
+
+.panel {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 30px;
+}
+
+.panel > a {
+    padding: 20px;
 }
 
 .row > img {
