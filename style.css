@@ -29,16 +29,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    cursor: pointer;
-    text-decoration: none;
-    -webkit-transition: 500ms linear 0s;
-    -moz-transition: 500ms linear 0s;
-    -o-transition: 500ms linear 0s;
-    transition: 500ms linear 0s;
-    text-shadow: -.0625rem .0625rem .5rem #cecece, .0625rem -.0625rem .5rem #fff;
-}
-
 img, .center {
     margin: 0 auto;
 }
@@ -62,8 +52,18 @@ h1, h2, h3, p, a, .col, .center, .front, .footer {
     font-family: 'Lato', 'Arial', serif;
 }
 
-h1, a, h2, p, button {
+h1, h2, p, button {
     color: #c9d1d9;
+}
+
+a {
+    color: #58a6ff
+}
+
+.description {
+    width: 80%;
+    margin: 15px auto;
+    
 }
 
 img {
@@ -116,19 +116,30 @@ h1 {
     font-size: 30px;
     font-style: bold;
     padding: 20px;
-    border: solid black;
+    border: solid 3px black;
     background-color: #21262d;
     width: 500px;
     text-align: center;
     margin: 0 auto;
     transition: 0.4s;
+    outline: rgb(140, 140, 140)
 }
 
-.active, .accordion:hover {
+.accordion:hover {
     display: block;
     cursor: pointer;
     border-color:rgb(140, 140, 140);
     outline: 0 none;
+}
+
+.accordion:active {
+    border: solid rgb(140, 140, 140);
+    background-color: #21262d;
+}
+
+.active {
+    border: solid rgb(140, 140, 140);
+    outline: rgb(140, 140, 140)
 }
 
 .panel {
@@ -146,6 +157,13 @@ h1 {
     text-align: center;
     clear: both;
     display: block;
+    color: #58a6ff
+}
+
+.panel > a:hover {
+    cursor: pointer;
+    border-color:rgb(140, 140, 140);
+    outline: 0 none;
 }
 
 .panel > p {
