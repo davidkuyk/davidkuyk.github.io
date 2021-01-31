@@ -5,7 +5,7 @@ html {
     }
 
 body, .footer {
-    background: rgb(238, 238, 238);
+    background: #161b22;
     margin: auto;
 }
 
@@ -62,8 +62,8 @@ h1, h2, h3, p, a, .col, .center, .front, .footer {
     font-family: 'Lato', 'Arial', serif;
 }
 
-h1, a, h2 {
-    color: black;
+h1, a, h2, p, button {
+    color: #c9d1d9;
 }
 
 img {
@@ -117,6 +117,7 @@ h1 {
     font-style: bold;
     padding: 20px;
     border: solid black;
+    background-color: #21262d;
     width: 500px;
     text-align: center;
     margin: 0 auto;
@@ -125,7 +126,6 @@ h1 {
 
 .active, .accordion:hover {
     display: block;
-    background-color: rgb(140, 140, 140);
     cursor: pointer;
     border-color:rgb(140, 140, 140);
     outline: 0 none;
@@ -140,7 +140,8 @@ h1 {
 
 .panel > a {
     padding: 0 100px;
-    border: 3px solid black;
+    border: 3px solid #30363d;
+    background-color: #21262d;
     font-size: 20px;
     text-align: center;
     clear: both;
