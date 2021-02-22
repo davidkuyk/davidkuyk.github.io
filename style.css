@@ -5,7 +5,7 @@ html {
     }
 
 body, .footer {
-    background: #161b22;
+    background: hsl(215, 21%, 15%);
     margin: auto;
 }
 
@@ -27,6 +27,7 @@ body, .footer {
 
 a {
     text-decoration: none;
+    color: #8090e0;
 }
 
 img, .center {
@@ -37,6 +38,7 @@ h1 {
     margin-top: 16px;
     margin-bottom: 8px;
     min-height: 68px; /* to prevent pyramid from jumping */
+    color: #c4af62;
 }
 
 @media all and (max-width: 899px) {
@@ -52,12 +54,12 @@ h1, h2, h3, p, a, .col, .center, .front, .footer {
     font-family: 'Lato', 'Arial', serif;
 }
 
-h1, h2, p, button {
-    color: #c9d1d9;
+h2 {
+    color: #c4af62;
 }
 
-a {
-    color: #58a6ff
+p, button {
+    color: #c9d1d9;
 }
 
 .description {
@@ -111,11 +113,12 @@ h1 {
     font-style: bold;
     padding: 20px;
     border: solid 3px black;
-    background-color: #21262d;
+    background-color: rgb(35, 43, 54);
     width: 100%;
     text-align: center;
     margin: 0 auto;
     transition: 0.4s;
+    color:#c4af62;
     outline: rgb(140, 140, 140)
 }
 
@@ -128,12 +131,16 @@ h1 {
 
 .accordion:active {
     border: solid rgb(140, 140, 140);
-    background-color: #21262d;
 }
 
 .active {
     border: solid rgb(140, 140, 140);
     outline: rgb(140, 140, 140)
+}
+
+.highlight {
+    font-weight: bold;
+    color:#c4af62;
 }
 
 .panel {
@@ -152,13 +159,10 @@ h1 {
 }
 
 .panel > .project > a {
-    
-    
     font-size: 20px;
     text-align: center;
     clear: both;
     display: block;
-    color: #58a6ff
 }
 
 .panel > a:hover {
