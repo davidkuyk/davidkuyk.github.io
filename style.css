@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background: hsl(215, 21%, 15%);
+  background: #f3f2ef;
   margin: auto;
 }
 
@@ -29,12 +29,12 @@ body {
 h3 {
   margin: 5px;
   font-size: 22px;
-  color: #c4af62;
+  color: #97874c;
 }
 
 a {
   text-decoration: none;
-  color: #8090e0;
+  color: #54609b;
 }
 
 .gh-link,
@@ -74,16 +74,24 @@ img {
 
 h1 {
   margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
   min-height: 68px; /* to prevent pyramid from jumping */
-  color: #c4af62;
+  color: #97874c;
+  font-size: 60px;
 }
 
 @media all and (max-width: 899px) {
   h1 {
+    font-size: 27px;
     margin-top: 16px;
     margin-bottom: 8px;
     min-height: 58px; /* to prevent pyramid from jumping */
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+  h1 {
+    font-size: 45px;
   }
 }
 
@@ -103,17 +111,17 @@ i {
   font-size: 100px;
   padding-top: 20px;
   padding-bottom: 5px;
-  color: #c9d1d9;
+  color: rgb(18, 18, 18);
   transition: all 0.2s ease-in-out;
 }
 
 h2 {
-  color: #c4af62;
+  color: #97874c;
 }
 
 p,
 button {
-  color: #c9d1d9;
+  color: rgb(18, 18, 18);
 }
 
 .description {
@@ -129,8 +137,9 @@ button {
 .main-description {
   width: 80%;
   margin: 15px auto;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
+  color: black;
 }
 
 @media all and (max-width: 899px) {
@@ -152,28 +161,6 @@ img {
   margin-bottom: 20px;
 }
 
-@media all and (max-width: 899px) {
-  h1 {
-    font-size: 27px;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1400px) {
-  h1 {
-    font-size: 45px;
-  }
-}
-
-@media all and (min-width: 1401px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-
-h1 {
-  margin: 0;
-}
-
 .projectGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -182,8 +169,9 @@ h1 {
 }
 
 .project {
-  border: 3px solid #30363d;
-  background-color: #21262d;
+  border: none;
+  border-radius: 10px;
+  background-color: #aba58c5b;
   text-align: center;
   justify-self: auto;
   display: block;
@@ -227,7 +215,7 @@ h1 {
   bottom: 0;
   right: 0;
   padding: 5px;
-  color: #c4af62;
+  color: #97874c;
 }
 
 a:hover {
