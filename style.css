@@ -160,6 +160,54 @@ img {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.fadeIn.active {
+  animation: fadeIn 0.5s ease forwards;
+  -webkit-animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    top: 2vw;
+    filter: blur(10px);
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+.fadeUp {
+  position: relative;
+  opacity: 0;
+  top: 2vw;
+  filter: blur(10px);
+}
+.fadeUp.active {
+  animation: fadeUp 1s ease forwards;
+  -webkit-animation: fadeUp 1s ease forwards;
+}
+
 .projectText {
   width: 25vw;
   align-self: top;
