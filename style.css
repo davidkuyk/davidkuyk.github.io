@@ -95,6 +95,10 @@ button {
   color: rgb(18, 18, 18);
 }
 
+.top img {
+  box-shadow: 0.625vw 0.625vw 1.406vw #00000062;
+}
+
 .description {
   margin: 10px 10px 0px 10px;
 }
@@ -152,6 +156,7 @@ img {
   display: flex;
   flex-direction: row;
   margin-bottom: 1vw;
+  box-shadow: 0.625vw 0.625vw 1.406vw #00000062;
 }
 
 @media all and (max-width: 850px) {
