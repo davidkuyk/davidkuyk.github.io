@@ -166,6 +166,7 @@ img {
     flex-direction: column;
     width: 95%;
     margin: auto;
+    margin-bottom: 10px;
   }
 }
 
