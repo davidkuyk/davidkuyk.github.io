@@ -241,7 +241,7 @@ button {
   }
 }
 
-.screenshot > a > picture {
+.screenshot > a > picture > img {
   width: 40vw;
   border-radius: 20px;
   margin: auto;
@@ -249,7 +249,7 @@ button {
 }
 
 @media all and (max-width: 850px) {
-  .screenshot > a > picture {
+  .screenshot > a > picture > img {
     width: 100%;
     border-radius: 20px;
     margin: auto;
@@ -257,7 +257,7 @@ button {
   }
 }
 
-.screenshot > a > picture:hover {
+.screenshot > a > picture > img:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
