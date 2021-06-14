@@ -271,6 +271,16 @@ button {
   height: auto;
 }
 
+.projectText i {
+  font-size: 24px;
+}
+
+@media all and (max-width: 850px) {
+  .projectText i {
+    font-size: 12px;
+  }
+}
+
 @media all and (max-width: 850px) {
   .projectText h3 {
     text-align: center;
